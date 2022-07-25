@@ -9,8 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ScrollView(.vertical) {
+                
+            }
+            .navigationTitle("Replica")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Image(systemName: "chevron.left")
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Image(systemName: "ellipsis")
+                }
+            }
+        }
     }
 }
 
