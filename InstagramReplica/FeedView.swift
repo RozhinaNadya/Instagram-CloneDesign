@@ -14,6 +14,9 @@ struct FeedView: View {
                 statusView
                 Divider()
                     .foregroundColor(.gray)
+                ForEach(Post.preview) { post in
+                    PostPreview(post: post)
+                }
             }
             .navigationTitle("Instagram Copy")
             .navigationBarTitleDisplayMode(.inline)

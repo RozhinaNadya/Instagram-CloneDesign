@@ -13,6 +13,7 @@
 		8470C995288EC268005DE0C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8470C994288EC268005DE0C9 /* Preview Assets.xcassets */; };
 		8470C99C288EDB2D005DE0C9 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470C99B288EDB2D005DE0C9 /* FeedView.swift */; };
 		8470C99E288EE1D7005DE0C9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470C99D288EE1D7005DE0C9 /* Post.swift */; };
+		8470C9A2288EE3B0005DE0C9 /* PostPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470C9A1288EE3B0005DE0C9 /* PostPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8470C994288EC268005DE0C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8470C99B288EDB2D005DE0C9 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		8470C99D288EE1D7005DE0C9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8470C9A1288EE3B0005DE0C9 /* PostPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8470C98F288EC25C005DE0C9 /* ContentView.swift */,
 				8470C99B288EDB2D005DE0C9 /* FeedView.swift */,
 				8470C99D288EE1D7005DE0C9 /* Post.swift */,
+				8470C9A1288EE3B0005DE0C9 /* PostPreview.swift */,
 				8470C991288EC268005DE0C9 /* Assets.xcassets */,
 				8470C993288EC268005DE0C9 /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 				8470C99C288EDB2D005DE0C9 /* FeedView.swift in Sources */,
 				8470C98E288EC25C005DE0C9 /* InstagramReplicaApp.swift in Sources */,
 				8470C99E288EE1D7005DE0C9 /* Post.swift in Sources */,
+				8470C9A2288EE3B0005DE0C9 /* PostPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

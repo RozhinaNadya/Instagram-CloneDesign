@@ -14,8 +14,8 @@ struct Post: Identifiable {
     let userImage: String
     let imageName: String
     let likes: Int
-    let descripttion: String
+    let description: String
     let timestamp: String
     
-    static let preview: [Post] = Array(repeating: Post(userName: "Xcoder", userImage: "avattar", imageName: "img5", likes: 100, descripttion: "Lovely Stockholm", timestamp: "5 MINUTES AGO"), count: 10)
+    static let preview: [Post] = Array(repeating: Post(userName: "Xcoder", userImage: "avatar", imageName: "img5", likes: 100, description: "Lovely Stockholm", timestamp: "5 MINUTES AGO"), count: 10)
 }
