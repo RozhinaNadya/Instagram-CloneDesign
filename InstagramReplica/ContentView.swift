@@ -12,6 +12,7 @@ struct ContentView: View {
         NavigationView {
             ScrollView(.vertical) {
                 headerView
+                descriptionView
             }
             .navigationTitle("Xcoder")
             .navigationBarTitleDisplayMode(.inline)
@@ -82,6 +83,18 @@ struct ContentView: View {
                         .background(RoundedRectangle(cornerRadius: 4).stroke(Color.gray))
                 }
             }
+        }
+        .padding(.horizontal)
+    }
+    
+    private var descriptionView: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text("Nadya Rozhina")
+                .fontWeight(.semibold)
+            Text("IOS Developer")
+            Text("Beginner SwiftUI user, studying Combine and other Frameworks")
+                .foregroundColor(.gray)
+            HStack { Spacer() }
         }
         .padding(.horizontal)
     }
