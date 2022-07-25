@@ -12,6 +12,8 @@ struct FeedView: View {
         NavigationView {
             ScrollView(.vertical) {
                 statusView
+                Divider()
+                    .foregroundColor(.gray)
             }
             .navigationTitle("Instagram Copy")
             .navigationBarTitleDisplayMode(.inline)
@@ -52,6 +54,7 @@ struct FeedView: View {
                         .overlay(Circle().strokeBorder(Color.orange, lineWidth: 2))
                 }
             }
+            .padding([.leading, .top], 8)
         }
     }
 }
