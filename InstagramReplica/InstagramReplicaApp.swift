@@ -11,7 +11,8 @@ import SwiftUI
 struct InstagramReplicaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+         //   ContentView()
+            FeedView()
         }
     }
 }
