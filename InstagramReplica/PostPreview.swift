@@ -46,19 +46,23 @@ struct PostPreview: View {
             
             VStack(alignment: .leading) {
                 HStack {
-                    Text("\(post.likes)")
+                    Text("\(post.likes) likes")
                         .font(.headline)
+                        .padding(.bottom, 1)
                     Spacer()
                 }
                 Text(post.userName)
                     .font(.headline)
                 + Text(" " + post.description)
+
                 
                 Text(post.timestamp)
                     .font(.footnote)
                     .foregroundColor(.gray)
+                    .padding(.top, 1)
             }
             .padding(.horizontal)
+            .padding(.bottom)
         }
     }
 }

@@ -135,7 +135,7 @@ struct ContentView: View {
             .padding(.top, 4)
             
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 0) {
-                ForEach(1..<15) { index in
+                ForEach(1..<6) { index in
                     Image("img\(index)")
                         .resizable()
                         .scaledToFill()
