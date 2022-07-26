@@ -48,7 +48,7 @@ struct FeedView: View {
                         , alignment: .bottomTrailing
                     )
                 
-                ForEach(1..<5) { index in
+                ForEach(1..<6) { index in
                     Image("img\(index)")
                         .resizable()
                         .scaledToFill()
@@ -57,8 +57,8 @@ struct FeedView: View {
                         .overlay(Circle().strokeBorder(Color.orange, lineWidth: 2))
                 }
             }
-            .padding([.leading, .top], 8)
         }
+        .padding([.leading, .top], 8)
     }
 }
 

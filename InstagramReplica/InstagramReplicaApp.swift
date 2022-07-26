@@ -11,8 +11,20 @@ import SwiftUI
 struct InstagramReplicaApp: App {
     var body: some Scene {
         WindowGroup {
-         //   ContentView()
-            FeedView()
+
+            TabView {
+                FeedView()
+                    .tabItem {
+                        Image(systemName: "house")
+                            .padding(4)
+                    }
+                
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "person")
+                            .padding(4)
+                    }
+            }
         }
     }
 }

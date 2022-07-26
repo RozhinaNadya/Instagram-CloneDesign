@@ -13,6 +13,8 @@ struct ContentView: View {
             ScrollView(.vertical) {
                 headerView
                 descriptionView
+                highlightsView
+                imagesView
             }
             .navigationTitle("Xcoder")
             .navigationBarTitleDisplayMode(.inline)
@@ -97,6 +99,52 @@ struct ContentView: View {
             HStack { Spacer() }
         }
         .padding(.horizontal)
+    }
+    
+    private var highlightsView: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 12) {
+                ForEach(1..<6) { index in
+                    Image("img\(index)")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 75, height: 75)
+                        .clipShape(Circle())
+                        .overlay(Circle().strokeBorder(Color.orange, lineWidth: 2))
+                }
+            }
+        }
+        .padding(.leading)
+    }
+    
+    private var imagesView: some View {
+        VStack (spacing: 8) {
+            HStack {
+                Spacer()
+                Image(systemName: "rectangle.split.3x3")
+                    .foregroundColor(.black)
+                Spacer()
+                Image(systemName: "squares.below.rectangle")
+                    .foregroundColor(.black)
+                Spacer()
+                Image(systemName: "person.crop.rectangle")
+                    .foregroundColor(.black)
+                Spacer()
+            }
+            .font(.title2)
+            .padding(.top, 4)
+            
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 0) {
+                ForEach(1..<15) { index in
+                    Image("img\(index)")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3)
+                        .clipped()
+                        .padding(.bottom, 2)
+                }
+            }
+        }
     }
 }
 
